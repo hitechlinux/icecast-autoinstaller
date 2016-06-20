@@ -21,7 +21,7 @@ Distro Supported : `Ubuntu 14.04, Debian 7, Zorin OS 11,`
 
   $ `./create.sh myiceuser mypassword`
   
-  `myiceuser` = User Which Which you will login with Filezilla to upload .mp3 into `music/` folder.
+  `myiceuser` = User Which you will login with Filezilla to upload .mp3 into `music/` folder.
   
   `mypassword` = `myiceuser` password.
 
