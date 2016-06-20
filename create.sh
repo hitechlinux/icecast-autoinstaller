@@ -165,6 +165,4 @@ service icecast2 restart
 echo "Installation Is Done!"
 echo "Login with FileZilla Username: $1 Password: $2 "
 echo "Upload .Mp3 Files On music/ folder"
-echo "Visit SERVERIP:8000"
-echo "For More Easy Tricks Visit http://hitechlinux.com/"
 fi
