@@ -1,0 +1,16 @@
+<ezstream>
+    <url>http://PublicIP:8000/stream</url>
+    <sourcepassword>******</sourcepassword>
+    <format>MP3</format>
+    <filename>/home/ice/music/playlist.txt</filename>
+    <stream_once>0</stream_once>
+    <svrinfoname>PlayOgar Radio</svrinfoname>
+    <svrinfourl>http://radio-ogar.ml/</svrinfourl>
+    <svrinfogenre>DubStep</svrinfogenre>
+    <svrinfodescription>RawClan.ML Radio, Dubstep, Mix, Trap, Remix, Chill.</svrinfodescription>
+    <svrinfobitrate>128</svrinfobitrate>
+    <svrinfochannels>2</svrinfochannels>
+    <svrinfosamplerate>44100</svrinfosamplerate>
+    <shuffle>1</shuffle>
+    <svrinfopublic>0</svrinfopublic>
+</ezstream>
