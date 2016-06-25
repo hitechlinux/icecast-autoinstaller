@@ -21,11 +21,11 @@ Distro Supported : `Ubuntu 14.04, Debian 7, Zorin OS 11,`
 
 # K.B
 
-    `./create.sh myiceuser mypassword`
+    **./create.sh** myiceuser mypassword
   
-    `myiceuser` = User Which you will login with Filezilla to upload .mp3 into `music/` folder.
+    **myiceuser** = User Which you will login with Filezilla to upload .mp3 into **music/** folder.
   
-    `mypassword` = `myiceuser` password.
+    **mypassword** = **myiceuser** password.
 
 After you have upload some songs.mp3 you will need to create a playlist.txt with this command
   
