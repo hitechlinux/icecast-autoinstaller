@@ -23,44 +23,44 @@ echo $1:$2 | chpasswd -c MD5
 apt-get install -y nano gcc make zip unzip build-essential screen pkg-config libxml2-dev icecast2 ezstream
 
 #Req. For Stream.
-mkdir dfiles
-cd dfiles/
+mkdir ~/dfiles
+cd ~/dfiles/
 wget http://downloads.xiph.org/releases/ogg/libogg-1.3.2.zip
 wget http://downloads.xiph.org/releases/vorbis/libvorbis-1.3.5.zip
 wget http://downloads.xiph.org/releases/libshout/libshout-2.4.1.tar.gz
 wget http://downloads.xiph.org/releases/ezstream/ezstream-0.6.0.tar.gz
 
 #Unzip Folders.
-cd dfiles/
+cd ~/dfiles/
 unzip libogg-1.3.2.zip
 unzip libvorbis-1.3.5.zip
 tar xf libshout-2.4.1.tar.gz
 tar xf ezstream-0.6.0.tar.gz
-cd
+cd ~/
 
 #Install Libogg.
-cd dfiles/libogg-1.3.2
+cd ~/dfiles/libogg-1.3.2
 ./configure
 make && make install
 
 #Install LibVorbis.
-cd dfiles/libvorbis-1.3.5
+cd ~/dfiles/libvorbis-1.3.5
 ./configure
 make && make install
 
 #Install Libshout.
-cd dfiles/libshout-2.4.1
+cd ~/dfiles/libshout-2.4.1
 ./configure
 make && make install
 
 #Install EzStream.
-cd dfiles/ezstream-0.6.0
+cd ~/dfiles/ezstream-0.6.0
 ./configure
 make && make install
 
 #Clear.
-cd
-rm -Rf dfiles/
+cd ~/
+rm -Rf ~/dfiles/
 
 #Edit Icecast2 Settings.
 rm -Rf /etc/default/icecast2
@@ -139,7 +139,7 @@ cat <<EOF > /etc/icecast2/icecast.xml
 EOF
 	
 #Creating Ezstream Config.
-cat <<EOF > ezstream_mp3.xml
+cat <<EOF > ~/ezstream_mp3.xml
 <ezstream>
     <url>http://SERVER_IP:8000/stream</url>
     <sourcepassword>$2</sourcepassword>
