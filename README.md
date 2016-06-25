@@ -17,7 +17,7 @@ Distro Supported : `Ubuntu 14.04, Debian 7, Zorin OS 11,`
 
 2. Start Installation
 
-    $ `./create.sh myiceuser mypassword`
+    $ **`./create.sh myiceuser mypassword`**
 
 # K.B
 
@@ -41,8 +41,8 @@ After those Steps Into root home you will find `ezstream_mp3.xml` Open and edit 
 
 You can Read my Ezstream_Example.xml To know how this will work. After u'r Done Start Stream.
 
-    $ `sudo screen`
+    $ sudo screen
  
-    $ `cd ~`
+    $ cd ~/
  
-    $ `ezstream -c ezstream_mp3.xml`
+    $ ezstream -c ezstream_mp3.xml
