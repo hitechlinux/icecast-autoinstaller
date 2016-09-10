@@ -23,7 +23,8 @@ Distro Supported : `Ubuntu 14.04, Debian 7, Zorin OS 11,`
 
     ./create.sh myiceuser mypassword
   
-    myiceuser = User Which you will login with Filezilla to upload .mp3 into music/ folder.
+    myiceuser = User Which you will login with Filezilla to upload .mp3 into music/ folder. I Haven't Make this script to autoinstall Proftpd or Vsftpd, because maybe you have already installed it. so if you haven't install proftpd or vsftpd install it. IF you don't want you can use filezilla to upload in port 22 login as root and go at /home/myiceuser/music.
+    Isn't needed to chmod/chown for as time as you will run stream as root. 
   
     mypassword = myiceuser password.
 
