@@ -141,7 +141,7 @@ EOF
 #Creating Ezstream Config.
 cat <<EOF > ~/ezstream_mp3.xml
 <ezstream>
-    <url>http://SERVER_IP:8000/stream</url>
+    <url>http://`curl -s api.ipify.org`:8000/stream</url>
     <sourcepassword>$2</sourcepassword>
     <format>MP3</format>
     <filename>/home/$1/music/playlist.txt</filename>
@@ -160,9 +160,10 @@ EOF
 
 #Restarting icecast.
 service icecast2 restart
-
+clear
 #End of The sotry.
 echo "Installation Is Done!"
 echo "Login with FileZilla Username: $1 Password: $2 "
 echo "Upload .Mp3 Files On music/ folder"
+echo "Icecast is running on http://`curl -s api.ipify.org`:8000"
 fi
