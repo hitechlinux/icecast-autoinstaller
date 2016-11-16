@@ -47,3 +47,17 @@ You can Read my Ezstream_Example.xml To know how this will work. After u'r Done 
     $ cd ~/
  
     $ ezstream -c ezstream_mp3.xml
+
+
+Multi Stream in the same server?!
+open new terminal tab, 
+
+    $ cd ~/
+    
+    $ cp ezstream_mp3.xml
+    
+    $ nano ezstream_mp3.xml (Where is /stream change to /live)
+    
+    $ change /home/myuser/music/playlist.txt to /home/new-user/music/new-playlist.txt
+    
+    $ screen; ezstream -c ezstream_mp3.xml
