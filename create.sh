@@ -25,43 +25,43 @@ apt-get install -y nano gcc make zip unzip build-essential screen pkg-config lib
 #Req. For Stream.
 mkdir ~/dfiles
 cd ~/dfiles/
-wget http://downloads.xiph.org/releases/ogg/libogg-1.3.2.zip
-wget http://downloads.xiph.org/releases/vorbis/libvorbis-1.3.5.zip
+wget https://ftp.osuosl.org/pub/xiph/releases/ogg/libogg-1.3.3.zip
+wget http://downloads.xiph.org/releases/vorbis/libvorbis-1.3.6.zip
 wget http://downloads.xiph.org/releases/libshout/libshout-2.4.1.tar.gz
 wget http://downloads.xiph.org/releases/ezstream/ezstream-0.6.0.tar.gz
 
 #Unzip Folders.
 cd ~/dfiles/
-unzip libogg-1.3.2.zip
-unzip libvorbis-1.3.5.zip
+unzip libogg-1.3.3.zip
+unzip libvorbis-1.3.6.zip
 tar xf libshout-2.4.1.tar.gz
 tar xf ezstream-0.6.0.tar.gz
 cd ~/
 
 #Install Libogg.
-cd ~/dfiles/libogg-1.3.2
+cd ~/dfiles/libogg-1.3.3
 ./configure
-make && make install
+make -j`nproc` && make install
 
 #Install LibVorbis.
-cd ~/dfiles/libvorbis-1.3.5
+cd ~/dfiles/libvorbis-1.3.6
 ./configure
-make && make install
+make -j`nproc` && make install
 
 #Install Libshout.
 cd ~/dfiles/libshout-2.4.1
 ./configure
-make && make install
+make -j`nproc` && make install
 
 #Install EzStream.
 cd ~/dfiles/ezstream-0.6.0
 ./configure
-make && make install
+make -j`nproc` && make install
 
 #Clear.
 cd ~/
 rm -Rf ~/dfiles/
-
+sudo apt-get install x264 ffmpeg -y
 #Edit Icecast2 Settings.
 rm -Rf /etc/default/icecast2
 cat <<EOF > /etc/default/icecast2
